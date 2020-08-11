@@ -2,6 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Eric Serafim</Authors>
+    <Company>Eric Serafim</Company>
+    <Copyright>2020</Copyright>
+    <PackageProjectUrl>https://github.com/ericserafim/Stringer</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/ericserafim/Stringer</RepositoryUrl>
+    <PackageTags>dotnet core string extensions</PackageTags>
   </PropertyGroup>
 
 </Project>
