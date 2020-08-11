@@ -1,4 +1,4 @@
-name: .NET Core
+name: Stringer CI/CD
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     branches: [ master ]
 
 jobs:
-  build:
+  build_tests_publish:
 
     runs-on: ubuntu-latest
 
@@ -23,5 +23,11 @@ jobs:
       run: dotnet build --configuration Release --no-restore --verbosity minimal
     - name: Test
       run: dotnet test --no-restore --verbosity minimal
-    - name: Publish
-      run: dotnet pack --configuration Release --no-restore --verbosity minimal ./Stringer/Stringer.csproj
+    - name: Publish NuGet
+      uses: brandedoutcast/publish-nuget@v2.5.5
+      with:        
+        PROJECT_FILE_PATH: "./Stringer/Stringer.csproj"
+        NUGET_KEY: ${{ secrets.NUGET_API_KEY }}         
+    #- name: Publish
+    #  run: dotnet pack --configuration Release --no-restore --verbosity minimal ./Stringer/Stringer.csproj
+      
