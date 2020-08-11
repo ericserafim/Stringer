@@ -26,3 +26,8 @@ It is a set of string extensions to avoid runtime exception and keep the code ea
   var result = source.Equal("A");
   var result = source.Equal("A", StringComparison.OrdinalIgnoreCase);
 ```
+
+# How to use
+```
+dotnet add package EricSerafim.Stringer --version 1.0.0
+```
