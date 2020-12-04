@@ -1,7 +1,7 @@
 ![Stringer CI/CD](https://github.com/ericserafim/Stringer/workflows/Stringer%20CI/CD/badge.svg)
 
 # Stringer
-It is a set of string extensions to avoid runtime exception and keep the code easy to read as much as possible.
+It is a set of string extensions to avoid runtime exceptions and keep the code easy to read as much as possible.
 
 # Methods
 * IsNull()
